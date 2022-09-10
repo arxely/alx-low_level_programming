@@ -10,9 +10,9 @@ int main(void)
 	int i;
 	int j;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 48; i <= 56; i++)
 	{
-		for (j = 49; i <= 58; i++)
+		for (j = 49; i <= 57; i++)
 		{
 			if (j > i)
 			{

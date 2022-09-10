@@ -12,11 +12,11 @@ int main(void)
 			'l',
 		   'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
 		   'y', 'z', '\0'};
-	for (i = 25; alpha[i]; i--)
+	for (i = 25; i >= 0; i--)
 	{
 		putchar(alpha[i]);
 	}
 	putchar(10);
-	
+
 	return (0);
 }

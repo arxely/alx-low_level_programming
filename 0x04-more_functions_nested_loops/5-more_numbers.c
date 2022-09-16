@@ -13,7 +13,7 @@ void more_numbers(void)
 
 	for (k = 0; k < 10; k++)
 	{
-		j = 47;
+		j = 48;
 		for (i = 48; i <= 62; i++)
 		{
 			if (i > 57)
@@ -29,7 +29,7 @@ void more_numbers(void)
 			{
 				_putchar(j);
 				j++;
-				if (j == 51)
+				if (j == 52)
 				{
 					break;
 				}

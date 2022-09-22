@@ -28,14 +28,14 @@ int _strcmp(char *s1, char *s2)
 	result = size_of_s1 - size_of_s2;
 	if (result < 0)
 	{
-		return (-15);
+		return (result);
 	}
 	else if (result > 0)
 	{
-		return (15);
+		return (result);
 	}
 	else
 	{
-		return (0);
+		return (result);
 	}
 }

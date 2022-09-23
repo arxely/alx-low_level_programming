@@ -24,6 +24,10 @@ char *cap_string(char *s)
 				add_to = *(s + i + 1) - 97;
 				*(s + i + 1) = 65 + add_to;
 			}
+			if (*(s + i) == '\t')
+			{
+				*(s + i) = ' ';
+			}
 		}
 	}
 	return (s);

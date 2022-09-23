@@ -21,7 +21,7 @@ char *cap_string(char *s)
 			if (*(s + i) == separators[j] && *(s + i + 1) &&
 			    *(s + i + 1) >= 97 && *(s + i + 1) <= 122)
 			{
-				add_to = *(s * i + 1) - 97;
+				add_to = *(s + i + 1) - 97;
 				*(s + i + 1) = 65 + add_to;
 			}
 		}

@@ -14,15 +14,15 @@ char *cap_string(char *s)
 	char separators[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(',
 			    ')', '{', '}'};
 
-	for (i = 0; s[i]; i++)
+	for (i = 0; *(s + i); i++)
 	{
 		for (j = 0; separators[j]; j++)
 		{
-			if (s[i] == separators[j] && s[i + 1] && s[i + 1] >= 97
-			    && S[i + 1] <= 122)
+			if (*(s + i) == separators[j] && *(s + i + 1) &&
+			    *(s + i + 1) >= 97 && *(s + i + 1) <= 122)
 			{
-				add_to = s[i + 1] - 97;
-				s[i + 1] = 65 + add_to;
+				add_to = *(s * i + 1) - 97;
+				*(s + i + 1) = 65 + add_to;
 			}
 		}
 	}
